@@ -33,14 +33,14 @@ const Blog = ({blog, handlerToaddBookmarks , handlerToAddReadingTime}) => {
                 <div className="mx-6 pt-5 pr-16">
                     <p className="text-2xl text-black font-bold">{description}</p>
                 </div>
-                <div className="text-base font-normal text-gray-800 mx-6 pt-2 flex gap-10 pb-6">
+                <div className="text-base font-normal text-gray-800 mx-6 pt-4 flex gap-10 pb-6">
                     {
                         tags.map((tag, idx) => <span key={idx}><a>{tag}</a></span>)
                     }
                 </div>
                 <div className='pb-8'>
                     <button onClick={() =>handlerToAddReadingTime(readTime)}
-                        className='text-xl font-medium text-[#6047EC]  underline underline-offset-2 decoration-[#6047EC]  ml-4  mr-[490px]'
+                        className='text-xl font-medium text-[#6047EC]  underline underline-offset-2 decoration-[#6047EC]  ml-4  mr-[450px]'
                         >Mark as read</button>
                 </div>
             </div>
