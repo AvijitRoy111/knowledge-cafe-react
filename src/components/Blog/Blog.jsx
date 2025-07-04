@@ -1,10 +1,10 @@
 import { IoBookmarksOutline } from 'react-icons/io5';
-const Blog = ({blog, handlerToaddBookmarks}) => {
+const Blog = ({blog, handlerToaddBookmarks , handlerToAddReadingTime}) => {
     const {coverImg, author, authorImage, publishDate, readTime, tags, description} = blog
 
     return (
         <div >
-            <div className="bg-[#cccaca] rounded-2xl w-full mx-32">
+            <div className="bg-[#cccaca] rounded-2xl w-full mx-32 mb-10">
                 <div>
                     <img className="w-[850px] rounded-t-2xl" src={coverImg} alt="image" />
                 </div>
@@ -23,7 +23,7 @@ const Blog = ({blog, handlerToaddBookmarks}) => {
                             <h3>{readTime}</h3>
                         </div>
                         <div className='text-xl font-medium'>
-                            <button onClick={handlerToaddBookmarks}
+                            <button onClick={() => handlerToaddBookmarks(blog)}
                             ><IoBookmarksOutline></IoBookmarksOutline>
                             </button>
                         </div>
@@ -39,7 +39,9 @@ const Blog = ({blog, handlerToaddBookmarks}) => {
                     }
                 </div>
                 <div className='pb-8'>
-                    <h3 className='text-xl font-medium text-[#6047EC]  underline underline-offset-2 decoration-[#6047EC]  ml-4  mr-[490px]'>Mark as read</h3>
+                    <button onClick={() =>handlerToAddReadingTime(readTime)}
+                        className='text-xl font-medium text-[#6047EC]  underline underline-offset-2 decoration-[#6047EC]  ml-4  mr-[490px]'
+                        >Mark as read</button>
                 </div>
             </div>
         </div>

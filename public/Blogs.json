@@ -6,7 +6,7 @@
     "publishDate": "28 may 2025", 
     "runtimeLogo": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
     "authorImage": "https://randomuser.me/api/portraits/women/1.jpg",
-    "readTime": "5 min read",
+    "readTime": "5 ",
     "tags": ["#JavaScript", "#Closures", "#WebDev"],
     "description": "Understand how closures work in JavaScript with real-world examples.",
     "coverImg": "https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&w=800&q=80"
